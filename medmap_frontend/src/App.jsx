@@ -1,17 +1,13 @@
-
 import React from 'react';  
-import {BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './components/home/Home.jsx';
+import PharmacyProfile from './components/PharmacyProfile';
+
+
 
 function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-        </Routes>
-      </BrowserRouter>
+      <PharmacyProfile></PharmacyProfile>
     </div>
   )
 }

@@ -1,0 +1,25 @@
+.profile-container {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .profile-heading {
+    color: #ff0000; /* Customize the color to your preference */
+    font-size: 24px; /* Customize the font size to your preference */
+    margin-bottom: 10px;
+  }
+  
+  .profile-info {
+    margin-bottom: 10px;
+  }
+  
+  .profile-info label {
+    font-weight: bold;
+  }
+  
+  .profile-info span {
+    margin-left: 10px;
+  }
+  
