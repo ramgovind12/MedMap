@@ -1,0 +1,43 @@
+.inventory-container {
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .increase-button {
+    background-color: green;
+    color: #fff;
+  }
+  
+  .decrease-button {
+    background-color: yellow;
+    color: #000;
+  }
+  
+  .delete-button {
+    background-color: red;
+    color: #fff;
+  }
+  

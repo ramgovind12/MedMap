@@ -10,7 +10,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button'; 
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-
+import {Link} from 'react-router-dom'
 
 const pages = ['Inventory', 'Orders', 'About US'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -59,7 +59,7 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={Link}
                 sx={{ mx: 2, color: 'black' }}
               >
                 {page}
