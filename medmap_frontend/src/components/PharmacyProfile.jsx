@@ -14,7 +14,17 @@ function PharmacyProfile() {
 
   return (
     <div className="profile-container">
-      <h2 className="profile-heading">{pharmacy.name}</h2>
+      <h1 className="page-title">Pharmacy Profile</h1>
+      <div className="avatar-container">
+        <img
+          className="avatar"
+          src="/path/to/avatar.png"
+          alt="Pharmacy Avatar"
+        />
+      </div>
+      <div className="profile-info">
+        <h2 className="pharmacy-name">{pharmacy.name}</h2>
+      </div>
       <div className="profile-info">
         <label>Address:</label>
         <span>{pharmacy.address}</span>

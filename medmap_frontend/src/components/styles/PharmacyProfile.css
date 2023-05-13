@@ -3,11 +3,27 @@
     border: 1px solid #ddd;
     padding: 20px;
     background-color: #f2f2f2;
+    text-align: center;
   }
   
-  .profile-heading {
-    color: #ff0000; /* Customize the color to your preference */
-    font-size: 24px; /* Customize the font size to your preference */
+  .avatar-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 100px; /* Adjust the size of the avatar image */
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .page-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .pharmacy-name {
+    font-size: 28px; /* Adjust the font size of the pharmacy name */
     margin-bottom: 10px;
   }
   
