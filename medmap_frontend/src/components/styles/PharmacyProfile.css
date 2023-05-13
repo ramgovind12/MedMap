@@ -1,25 +1,174 @@
+/* Add styles for the pharmacy profile page */
+
 .profile-container {
-    margin-top: 20px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    background-color: #f2f2f2;
-  }
-  
-  .profile-heading {
-    color: #ff0000; /* Customize the color to your preference */
-    font-size: 24px; /* Customize the font size to your preference */
-    margin-bottom: 10px;
-  }
-  
-  .profile-info {
-    margin-bottom: 10px;
-  }
-  
-  .profile-info label {
-    font-weight: bold;
-  }
-  
-  .profile-info span {
-    margin-left: 10px;
-  }
-  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  margin-left: 20px;
+}
+
+.profile-name {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.profile-address p {
+  margin: 5px 0;
+}
+
+.profile-contact p {
+  margin: 5px 0;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.hours-list li {
+  margin-bottom: 5px;
+}
+
+.pharmacist-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pharmacist-avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.pharmacist-info {
+  margin-left: 10px;
+}
+
+.pharmacist-name {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.review-item {
+  margin-bottom: 10px;
+}
+
+.review-author {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.review-rating {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  color: goldenrod;
+  margin-right: 5px;
+}
+
+.review-comment {
+  margin-bottom: 0;
+}
+
+.services-list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* ... */
+
+.hours-list li {
+  margin-bottom: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hours-list li::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background-color: transparent;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: background-color 0.3s ease;
+  z-index: -1;
+}
+
+.hours-list li:hover::before {
+  background-color: lightgreen;
+}
+
+.hours-list li.sunday::before {
+  background-color: lightcoral;
+}
+
+/* ... */
+/* ... */
+
+.profile-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* ... */
+.profile-container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  max-width: 1200px; /* Adjust the max width as per your requirement */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.profile-section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 95%;
+}
+.opening-hours-section {
+  flex-basis: 50%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.pharmacist-section {
+  flex-basis: 50%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+/* Add more styles as needed */

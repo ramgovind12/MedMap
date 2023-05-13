@@ -10,6 +10,9 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button'; 
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import {Link} from 'react-router-dom'
+
+const pages = ['Inventory', 'Orders', 'About US'];
 
 const pages = ['Inventory', 'Orders', 'About Us'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -54,11 +57,15 @@ function ResponsiveAppBar() {
   
           <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
             {pages.map((page) => (
-               <Button  href={`/${page.toLowerCase().replace(/\s/g, '')}`} sx={{ mx: 2, color: 'black' }}>{page}</Button>
-          
-        ))}
-    </Box>
-
+              <Button
+                key={page}
+                onClick={handleCloseNavMenu}
+                sx={{ mx: 2, color: 'black' }}
+              >
+                {page}
+              </Button>
+            ))}
+          </Box>
   
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
