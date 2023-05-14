@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import {Link} from 'react-router-dom'
+import logo from './assets/Logo/logo.png'
 
 const pages = ['Inventory', 'Orders', 'About US'];
 
@@ -37,7 +38,7 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ justifyContent: 'center' }}>
           <img
-            src="/Users/ramgovind/Desktop/GitHub/MedMap/medmap_frontend/src/components/assets/Logo/logo.png"
+            src={logo}
             alt="Logo"
             style={{ height: '30px', marginRight: '10px' }}
           />

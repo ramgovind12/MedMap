@@ -22,7 +22,7 @@ function App() {
             <Route path="/pharmacyprofile" element={<PharmacyProfile/>} />
         
         </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
     </div>
     
   )
