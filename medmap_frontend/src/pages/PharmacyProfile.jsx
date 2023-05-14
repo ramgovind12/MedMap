@@ -1,8 +1,8 @@
 import React from 'react';
-import './styles/PharmacyProfile.css';
-import pharmProfileImage from './assets/profile/pharprofile.jpeg';
-import pharmacist from './assets/profile/pharmacist.jpeg'
-
+import '../styles/PharmacyProfile.css';
+import pharmProfileImage from '../assets/images/pharprofile.jpeg';
+import pharmacist from '../assets/images/pharmacist.jpeg';
+import Navbar from "../components/Navbar";
 function PharmacyProfile() {
   // Sample pharmacy data
   const pharmacy = {
@@ -24,7 +24,7 @@ function PharmacyProfile() {
     ],
     pharmacist: {
       name: 'John Smith',
-      profilePicture: {pharmacist},
+      profilePicture: {pharmProfileImage},
     },
     reviews: [
       { id: 1, rating: 4.5, comment: 'Great service!', author: 'Jane Doe' },
@@ -39,7 +39,10 @@ function PharmacyProfile() {
   };
 
   return (
-    <div className="profile-container">
+    
+    <div>
+      <Navbar/>
+      <div className="profile-container">
       <header>
         <div className="profile-header">
           <div className="profile-avatar">
@@ -50,8 +53,6 @@ function PharmacyProfile() {
             <div className="profile-address">
               <p>{pharmacy.address}</p>
               <p>{pharmacy.city}, {pharmacy.state} {pharmacy.zipcode}</p>
-            </div>
-            <div className="profile-contact">
               <p>Phone: {pharmacy.phone}</p>
               <p>Email: {pharmacy.email}</p>
             </div>
@@ -75,7 +76,7 @@ function PharmacyProfile() {
         <h2 className="section-title">Pharmacist</h2>
         <div className="pharmacist-container">
           <div className="pharmacist-avatar">
-            <img src={pharmacy.pharmacist.profilePicture} alt="Pharmacist Avatar" />
+            <img src={pharmacist} alt="Pharmacist Avatar" />
           </div>
           <div className="pharmacist-info">
             <p className="pharmacist-name">{pharmacy.pharmacist.name}</p>
@@ -107,6 +108,7 @@ function PharmacyProfile() {
           ))}
         </ul>
       </section>
+    </div>
     </div>
   );
 }
