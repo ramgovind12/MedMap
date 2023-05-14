@@ -4,7 +4,7 @@ import Inventory from './pages/Inventory.jsx';
 import About from './pages/AboutUs.jsx';
 import Orders from './pages/Orders.jsx';
 import Home from "./pages/Home.jsx";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Feedback from "./pages/Feedback";
 import Login from './pages/login';
 import Register from './pages/register';

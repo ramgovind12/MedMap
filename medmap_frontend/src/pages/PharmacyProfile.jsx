@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/PharmacyProfile.css';
 import pharmProfileImage from '../assets/images/pharprofile.jpeg';
 import pharmacist from '../assets/images/pharmacist.jpeg';
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar"
 function PharmacyProfile() {
   // Sample pharmacy data
   const pharmacy = {
@@ -70,7 +70,6 @@ function PharmacyProfile() {
             </li>
           ))}
         </ul>
-        <button className="edit-button">Edit</button>
       </section>
 
       <section className="profile-section">
@@ -83,7 +82,6 @@ function PharmacyProfile() {
             <p className="pharmacist-name">{pharmacy.pharmacist.name}</p>
           </div>
           </div>
-          <button className="edit-button">Edit</button>
       </section>
 
       <section className="profile-section">
@@ -109,7 +107,6 @@ function PharmacyProfile() {
             <li key={service}>{service}</li>
           ))}
         </ul>
-        <button className="edit-button">Edit</button>
       </section>
     </div>
     </div>
