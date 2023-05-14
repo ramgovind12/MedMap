@@ -7,7 +7,7 @@ import Home from "./pages/Home.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Feedback from "./pages/Feedback";
 import Login from './pages/login';
-import Register from './pages/register';
+// import Register from './pages/register';
 
 function App() {
   
@@ -17,9 +17,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
+          {/* <Route path="register" element={<Register />} /> */}
             <Route path="/" element={<Home />} />
-            {/* <Route path="/login" element={<Login />} /> */}
+            <Route path="/login" element={<Login />} />
             <Route path="/aboutus" element={<About />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/feedback" element={<Feedback />} />
