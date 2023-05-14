@@ -15,6 +15,8 @@ const pages = ['Inventory', 'Orders', 'About US'];
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
+
+
 function ResponsiveAppBar() {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -55,7 +57,7 @@ function ResponsiveAppBar() {
   
           <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
             {pages.map((page) => (
-              <Button key={page} href={`/${page.toLowerCase().replace(/\s/g, '')}`}>
+              <Button key={page}  href={`/${page.toLowerCase().replace(/\s/g, '')}`}>
               {page}
             </Button>
           ))}
