@@ -7,10 +7,10 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button'; 
+import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const pages = ['Inventory', 'Orders', 'About US'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -38,6 +38,11 @@ function ResponsiveAppBar() {
     <AppBar position="static" sx={{ backgroundColor: 'white' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ justifyContent: 'center' }}>
+          <img
+            src="/Users/ramgovind/Desktop/GitHub/MedMap/medmap_frontend/src/components/assets/Logo/logo.png"
+            alt="Logo"
+            style={{ height: '30px', marginRight: '10px' }}
+          />
           <Typography
             variant="h6"
             noWrap
@@ -54,19 +59,15 @@ function ResponsiveAppBar() {
           >
             MedMap
           </Typography>
-  
+
           <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={Link}
-                sx={{ mx: 2, color: 'black' }}
-              >
+              <Button key={page} onClick={Link} sx={{ mx: 2, color: 'black' }}>
                 {page}
               </Button>
             ))}
           </Box>
-  
+
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
@@ -100,6 +101,6 @@ function ResponsiveAppBar() {
       </Container>
     </AppBar>
   );
-  
 }
+
 export default ResponsiveAppBar;
