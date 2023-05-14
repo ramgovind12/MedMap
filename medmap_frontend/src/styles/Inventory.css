@@ -1,43 +1,102 @@
 .inventory-container {
-    margin: 20px;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th,
-  td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
-  
-  button {
-    margin-right: 5px;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px; /* Rounded corners */
-  }
-  
-  .increase-button {
-    background-color: green;
-    color: #fff;
-  }
-  
-  .decrease-button {
-    background-color: yellow;
-    color: #000;
-  }
-  
-  .delete-button {
-    background-color: red;
-    color: #fff;
-  }
-  
+  display: flex;
+  margin: 40px;
+}
+
+.left-pane {
+  width: 33%;
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 40px;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.right-pane {
+  flex: 1;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.increase-button {
+  background-color: green;
+  color: #fff;
+}
+
+.decrease-button {
+  background-color: yellow;
+  color: #000;
+}
+
+.delete-button {
+  background-color: red;
+  color: #fff;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  border: none; /* Remove the default border */
+  outline: none; /* Remove the outline when focused */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: green; /* Add green background color */
+  color: #fff; /* Set text color to white */
+}

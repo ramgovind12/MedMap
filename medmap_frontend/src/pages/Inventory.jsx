@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/Inventory.css';
-import Navbar from "../components/Navbar";
+import './styles/Inventory.css';
 
 const Inventory = () => {
   const [medicines, setMedicines] = useState([
@@ -22,10 +21,7 @@ const Inventory = () => {
   };
 
   return (
-    <div>
-      
-      <Navbar/>
-      <div className="inventory-container">
+    <div className="inventory-container">
       <h2>Stock Management Inventory</h2>
       <table>
         <thead>
@@ -55,7 +51,6 @@ const Inventory = () => {
           ))}
         </tbody>
       </table>
-    </div>
     </div>
   );
 };

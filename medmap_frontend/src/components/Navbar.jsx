@@ -7,9 +7,11 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button'; 
+import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import {Link} from 'react-router-dom'
+import logo from './assets/Logo/logo.png'
 
 const pages = ['Inventory', 'Orders', 'About US'];
 
@@ -37,6 +39,11 @@ function ResponsiveAppBar() {
     <AppBar position="static" sx={{ backgroundColor: 'white' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ justifyContent: 'center' }}>
+          <img
+            src={logo}
+            alt="Logo"
+            style={{ height: '30px', marginRight: '10px' }}
+          />
           <Typography
             variant="h6"
             noWrap
@@ -53,7 +60,6 @@ function ResponsiveAppBar() {
           >
             MedMap
           </Typography>
-          
   
           <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
             {pages.map((page) => (
@@ -63,7 +69,7 @@ function ResponsiveAppBar() {
           ))}
           
           </Box>
-  
+
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
@@ -97,6 +103,6 @@ function ResponsiveAppBar() {
       </Container>
     </AppBar>
   );
-  
 }
+
 export default ResponsiveAppBar;

@@ -70,6 +70,7 @@ function PharmacyProfile() {
             </li>
           ))}
         </ul>
+        <button className="edit-button">Edit</button>
       </section>
 
       <section className="profile-section">
@@ -82,6 +83,7 @@ function PharmacyProfile() {
             <p className="pharmacist-name">{pharmacy.pharmacist.name}</p>
           </div>
           </div>
+          <button className="edit-button">Edit</button>
       </section>
 
       <section className="profile-section">
@@ -107,6 +109,7 @@ function PharmacyProfile() {
             <li key={service}>{service}</li>
           ))}
         </ul>
+        <button className="edit-button">Edit</button>
       </section>
     </div>
     </div>
