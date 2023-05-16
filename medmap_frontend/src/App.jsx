@@ -6,7 +6,7 @@ import Orders from './pages/Orders.jsx';
 import Home from "./pages/Home.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Feedback from "./pages/Feedback";
-import Login from './pages/login';
+import Login from './pages/Login';
 // import Register from './pages/register';
 
 function App() {

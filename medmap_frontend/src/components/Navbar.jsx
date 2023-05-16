@@ -1,107 +1,34 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import logo from './assets/Logo/logo.png'
+import React from "react";
+import Navbar from "../components/Navbar";
+import "../styles/Home.css";
+import Box from "@mui/material/Box";
+// import adImage1 from "../assets/ad1.png";
+// import adImage2 from "../assets/ad2.png";
+// import adImage3 from "../assets/ad3.png";
 
-const pages = ['Inventory', 'Orders', 'About US'];
-
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-
-
-
-function ResponsiveAppBar() {
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
-
-
-   
-
+function HomePage() {
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'white' }}>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters sx={{ justifyContent: 'center' }}>
-          <img
-            src={logo}
-            alt="Logo"
-            style={{ height: '30px', marginRight: '10px' }}
-          />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              fontFamily: 'impact',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'black',
-              textDecoration: 'none',
-            }}
-          >
-            MedMap
-          </Typography>
-  
-          <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
-            {pages.map((page) => (
-              <Button key={page}  href={`/${page.toLowerCase().replace(/\s/g, '')}`}>
-              {page}
-            </Button>
-          ))}
-          
-          </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+    <div>
+      <Navbar />
+      <div className="homepage-container">
+        <h1>Welcome to the Home Page!</h1>
+        <div className="ad-banners-container">
+          <div className="ad-banner">
+            {/* <img src={adImage1} alt="Ad Banner 1" /> */}
+            <h2>Ad Banner 1</h2>
+          </div>
+          <div className="ad-banner ad-banner-half">
+            {/* <img src={adImage2} alt="Ad Banner 2" /> */}
+            <h2>Ad Banner 2</h2>
+          </div>
+          <div className="ad-banner ad-banner-third">
+            {/* <img src={adImage3} alt="Ad Banner 3" /> */}
+            <h2>Ad Banner 3</h2>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
-export default ResponsiveAppBar;
+export default HomePage;
